@@ -7,6 +7,9 @@
     /* cursor: pointer; */
 }
 .videoCard__player{
+    position: relative;
+    top: -18%; 
+     margin: 0;
     cursor: pointer;
     object-fit:fill;
     height: 100%;
@@ -14,25 +17,27 @@
 /* position: relative; */
 }
 .show{
+    
     color: white;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
     font-size: 7rem;
     cursor: pointer;
     opacity: 0.5;
+    z-index: 1000;
 }
 .dont-show{
-    color: white;
-    position: absolute;
-    top: 50%;
+    /* color: white;
+    position: relative; */
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 7rem;
+    transform: translate(-50%,-50%); */
+    /* font-size: 7rem;
     cursor: pointer;
-    opacity: 0;
-    display: none;
+    opacity: 0; */
+    z-index:-1;
 
 }
 
