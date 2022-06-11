@@ -1,0 +1,40 @@
+/* HTDL */
+html{
+    scroll-snap-type: y mandatory;
+}
+.app{
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+
+}
+.app__top{
+    margin-bottom: -40px;
+}
+.app__top>h2{
+    /* z-index: 1300; */
+    text-align: center;
+    color: white;
+}
+.app__logo{
+    height: 11vh;
+}
+.app__videos{
+    position: relative;
+    height: 80vh;
+    background-color: white;
+    top: 6%;
+    width: 70%;
+    border-radius: 20px;
+    max-width: 450px;
+    max-height: 1200px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+.app__videos::-webkit-scrollbar{
+    display: none;
+}
